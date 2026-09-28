@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0E1116">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Siddhant Talwar | Education and public systems, India</title>
 <meta name="description" content="Siddhant Talwar has spent a decade improving public and private systems in India, with a focus on education, as a consultant, operations lead and entrepreneur. He built the STEM Collective at Sanjhi Sikhiya in Patiala, served as a District Development Fellow with the Government of Punjab, and co-founded Khevaiya Foundation.">
@@ -46,24 +48,16 @@
 
 <style>
   :root{
-    --paper:#FBFBF9; --ink:#15181F; --muted:#5B6270; --rule:#E2E4E8;
-    --blue:#1E3A8A; --blue-tint:#EEF1FA; --marigold:#C98204;
+    color-scheme:dark;
+    --paper:#0E1116; --ink:#F5F6F8; --muted:#A3AAB6; --rule:#262B33;
+    --blue:#9DB3F2; --blue-tint:#172036; --marigold:#F0B340;
+    --title-blue:#4A7FF0;
     --sans:'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
     --serif:'Source Serif 4', Georgia, 'Times New Roman', serif;
     --deva:'Tiro Devanagari Hindi', 'Noto Serif Devanagari', serif;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --paper:#121418; --ink:#ECEDEF; --muted:#9AA1AD; --rule:#2A2E36;
-      --blue:#9DB3F2; --blue-tint:#1A2034; --marigold:#F0B340;
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#121418; --ink:#ECEDEF; --muted:#9AA1AD; --rule:#2A2E36;
-    --blue:#9DB3F2; --blue-tint:#1A2034; --marigold:#F0B340;
   }
   *,*::before,*::after{box-sizing:border-box;}
   html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);}
@@ -123,7 +117,7 @@
 
   .work-intro{font-family:var(--serif); font-size:20px; line-height:1.6; font-style:italic; color:var(--muted); max-width:56ch; margin:0 0 40px;}
   .story{padding:36px 0 40px; border-top:1px solid var(--rule);}
-  .story .meta{font-size:14px; color:var(--muted); margin-bottom:10px;}
+  .story .meta{font-size:17px; font-weight:600; color:var(--title-blue); margin-bottom:10px; line-height:1.4;}
   .story h3{font-family:var(--serif); font-size:clamp(24px,4.4vw,30px); font-weight:600; line-height:1.25; letter-spacing:-0.01em; margin:0 0 18px; max-width:28ch;}
   .story-body{font-family:var(--serif); font-size:18.5px; line-height:1.7; max-width:62ch;}
   .story-body p{margin:0 0 18px;}
@@ -153,12 +147,15 @@
   .press a{display:grid; grid-template-columns:160px 1fr; gap:4px 24px; padding:18px 0; text-decoration:none; color:var(--ink);}
   .press a:hover .headline{text-decoration:underline; text-decoration-color:var(--blue);}
   .press .source{font-size:14.5px; font-weight:600;}
+  .tbc-inline{color:#FF8A7A;}
+  .press .source .tbc{display:block; font-weight:600; color:#FF8A7A; font-size:13.5px;}
   .press .source span{display:block; font-weight:400; color:var(--muted); font-size:13.5px;}
   .press .headline{font-family:var(--serif); font-size:17.5px; line-height:1.45;}
   .press .context{display:block; font-family:var(--sans); font-size:14px; color:var(--muted); margin-top:4px;}
   @media (max-width:560px){ .press a{grid-template-columns:1fr;} }
 
-  .subhead{font-size:20px; font-weight:600; margin:0 0 6px;}
+  .subhead{font-size:22px; font-weight:600; margin:0 0 6px;}
+  .section-gap{margin-top:56px;}
   .subnote{font-size:15px; color:var(--muted); margin:0 0 22px;}
 
   .post{border-top:1px solid var(--rule);}
@@ -178,8 +175,6 @@
   .root .org{font-size:15px; color:var(--muted); margin:2px 0 8px;}
   .root p{margin:0; font-size:16px; max-width:62ch;}
 
-  footer{margin-top:40px; padding:28px 0 64px; border-top:1px solid var(--rule); display:flex; flex-wrap:wrap; gap:18px 48px; font-size:14.5px; color:var(--muted);}
-  footer b{display:block; color:var(--ink); font-weight:600; margin-bottom:2px;}
 
   ::selection{background:var(--blue); color:var(--paper);}
   @media (prefers-reduced-motion: reduce){ *{scroll-behavior:auto !important;} }
@@ -199,7 +194,7 @@
   <div class="wrap" role="tablist">
     <a class="tab" role="tab" id="tab-about" href="#about" aria-controls="about" aria-selected="true">About</a>
     <a class="tab" role="tab" id="tab-work" href="#work" aria-controls="work" aria-selected="false">Work</a>
-    <a class="tab" role="tab" id="tab-press" href="#press" aria-controls="press" aria-selected="false">Press and writing</a>
+    <a class="tab" role="tab" id="tab-recognition" href="#recognition" aria-controls="recognition" aria-selected="false">Recognition</a>
     <a class="tab" role="tab" id="tab-roots" href="#roots" aria-controls="roots" aria-selected="false">Roots</a>
   </div>
 </nav>
@@ -263,6 +258,7 @@
       <p>Capt. Manoj Kumar Pandey said it better than I ever could:</p>
       <blockquote class="motto">"Some goals are so worthy, it's glorious even to fail."<cite>Shaheed Capt. Manoj Kumar Pandey, PVC</cite></blockquote>
     </div>
+
   </section>
 
   <section class="panel" id="work" role="tabpanel" aria-labelledby="tab-work">
@@ -295,7 +291,7 @@
 
     <article class="story">
       <div class="meta">District Development Fellow · Government of Punjab, Fazilka · 2020 – 2022</div>
-      <h3>Two years on Punjab's border, making government work where it is needed most</h3>
+      <h3>Two years on Punjab's border making public services accessible</h3>
       <div class="story-body">
         <p>Fazilka sits on India's border with Pakistan, far from the places where policy is usually made. For two years I worked inside its district administration, and the work touched almost every part of public life.</p>
         <p>We built modern public libraries with room for more than 200 readers. Under Project AABAD, more than 20 departments came together for 30 border villages that had long been left behind. Wasteland in 75 villages became dense Miyawaki forests. Abohar, once ranked 380th in India for cleanliness, climbed to 105th in a single year, and became the first city in the country to tax and ban plastic at the municipal level, alongside a dedicated welfare fund for its sanitation workers.</p>
@@ -306,7 +302,7 @@
         <div><b>75</b>villages turned green</div>
         <div><b>100%</b>turnout of voters with disabilities</div>
       </div>
-      <p class="coverage">Read more in <a href="https://www.tribuneindia.com/news/punjab/mission-aabad-30-kicks-off-in-fazilka-422106" target="_blank" rel="noopener">The Tribune on Mission Aabad</a>, <a href="https://indianmasterminds.com/features/change-makers/upbeat-about-miyawaki-method-this-young-ias-officer-has-created-more-than-40-forests-in-punjab/" target="_blank" rel="noopener">Indian Masterminds on My Village, My Forest</a> and <a href="https://www.tribuneindia.com/news/jalandhar/city-ranks-161st-slips-42-notches-341772" target="_blank" rel="noopener">The Tribune on Swachh Survekshan 2021</a></p>
+      <p class="coverage">Read more in <a href="https://www.tribuneindia.com/news/punjab/mission-aabad-30-kicks-off-in-fazilka-422106" target="_blank" rel="noopener">The Tribune on Mission Aabad</a>, <a href="https://indianmasterminds.com/features/change-makers/upbeat-about-miyawaki-method-this-young-ias-officer-has-created-more-than-40-forests-in-punjab/" target="_blank" rel="noopener">Indian Masterminds on My Village, My Forest</a>, <a href="https://timesofindia.indiatimes.com/city/amritsar/my-village-my-forest-for-clean-environment-in-fazilka-villages/articleshow/92102972.cms" target="_blank" rel="noopener">The Times of India on My Village, My Forest</a>, <a href="https://indianexpress.com/article/cities/ludhiana/punjab-border-district-fazilka-project-kitab-libraries-8000793/" target="_blank" rel="noopener">The Indian Express on Project Kitab</a> and <a href="https://www.tribuneindia.com/news/jalandhar/city-ranks-161st-slips-42-notches-341772" target="_blank" rel="noopener">The Tribune on Swachh Survekshan 2021</a></p>
     </article>
 
     <article class="story">
@@ -324,7 +320,7 @@
     </article>
   </section>
 
-  <section class="panel" id="press" role="tabpanel" aria-labelledby="tab-press">
+  <section class="panel" id="recognition" role="tabpanel" aria-labelledby="tab-recognition">
     <h2 class="subhead">In the press</h2>
     <p class="subnote">Coverage of programmes I've led or worked on.</p>
     <ul class="press">
@@ -332,48 +328,51 @@
         <span class="source">The Indian Express<span>April 2026</span></span>
         <span class="headline">To promote science education among girls in Punjab, STEM Collective launched<span class="context">Sanjhi Sikhiya's STEM Collective, Patiala</span></span>
       </a></li>
+      <li><a href="https://indianexpress.com/article/cities/ludhiana/punjab-border-district-fazilka-project-kitab-libraries-8000793/" target="_blank" rel="noopener">
+        <span class="source">The Indian Express<span>July 2022</span></span>
+        <span class="headline">Project Kitab brings public libraries to Punjab's border district of Fazilka<span class="context">Project Kitab, Fazilka district administration</span></span>
+      </a></li>
+      <li><a href="https://timesofindia.indiatimes.com/city/amritsar/my-village-my-forest-for-clean-environment-in-fazilka-villages/articleshow/92102972.cms" target="_blank" rel="noopener">
+        <span class="source">The Times of India<span class="tbc">Month and year to confirm</span></span>
+        <span class="headline">My Village, My Forest for a clean environment in Fazilka's villages<span class="context">My Village, My Forest, Fazilka district administration</span></span>
+      </a></li>
       <li><a href="https://indianmasterminds.com/features/change-makers/upbeat-about-miyawaki-method-this-young-ias-officer-has-created-more-than-40-forests-in-punjab/" target="_blank" rel="noopener">
-        <span class="source">Indian Masterminds<span>Fazilka</span></span>
+        <span class="source">Indian Masterminds<span class="tbc">Month and year to confirm</span></span>
         <span class="headline">Miyawaki forests across Punjab's villages<span class="context">My Village, My Forest, Fazilka district administration</span></span>
       </a></li>
       <li><a href="https://www.tribuneindia.com/news/punjab/mission-aabad-30-kicks-off-in-fazilka-422106" target="_blank" rel="noopener">
-        <span class="source">The Tribune<span>Fazilka</span></span>
-        <span class="headline">Mission Aabad-30 kicks off in Fazilka<span class="context">Development camps in 30 border villages</span></span>
+        <span class="source">The Tribune<span>August 2022</span></span>
+        <span class="headline">'Mission Aabad-30' kicks off in Fazilka<span class="context">Development camps in 30 border villages</span></span>
       </a></li>
       <li><a href="https://www.tribuneindia.com/news/jalandhar/city-ranks-161st-slips-42-notches-341772" target="_blank" rel="noopener">
-        <span class="source">The Tribune<span>2021</span></span>
-        <span class="headline">Swachh Survekshan 2021 rankings<span class="context">Abohar placed 105th, up from 380th</span></span>
+        <span class="source">The Tribune<span>November 2021</span></span>
+        <span class="headline">Swachh Survekshan 2021 rankings<span class="context">Abohar ranked 105th in the country</span></span>
       </a></li>
       <li><a href="https://www.thehindu.com/news/cities/Delhi/ip-university-announces-students-panel/article7728502.ece" target="_blank" rel="noopener">
-        <span class="source">The Hindu<span>2015</span></span>
+        <span class="source">The Hindu<span>October 2015</span></span>
         <span class="headline">IP University announces students' panel<span class="context">Elected Vice-President of the GGSIPU student council</span></span>
       </a></li>
     </ul>
 
-    <h2 class="subhead" id="writing">Writing</h2>
-    <p class="subnote">Notes from the field on education, government and the distance between them.</p>
+    <h2 class="subhead section-gap">On video</h2>
+    <p class="subnote">Films on work I was part of.</p>
+    <ul class="press">
+      <li><a href="https://www.youtube.com/watch?v=gUb3At48MDE" target="_blank" rel="noopener">
+        <span class="source">YouTube<span class="tbc">Month and year to confirm</span></span>
+        <span class="headline">My Village, My Forest, Fazilka<span class="context">The district's Miyawaki forest drive</span></span>
+      </a></li>
+      <li><a href="https://www.youtube.com/watch?v=zzZ_UT01HbM" target="_blank" rel="noopener">
+        <span class="source">YouTube<span class="tbc">Month and year to confirm</span></span>
+        <span class="headline">Mission Aabad-30, Fazilka<span class="context">Development camps in 30 border villages</span></span>
+      </a></li>
+    </ul>
 
-    <!--
-      TO ADD A POST: copy the block below, remove the comment markers, and fill it in.
-      The id becomes the post's shareable link, e.g. yoursite.com/#post-first-post
-
-      <details class="post" id="post-first-post">
-        <summary><span class="ptitle">Post title</span><span class="pdate">12 Oct 2026</span></summary>
-        <div class="pbody">
-          <p>First paragraph.</p>
-          <p>Second paragraph.</p>
-          <p class="share"><a href="#post-first-post">Link to this post</a></p>
-        </div>
-      </details>
-    -->
-
-    <p class="empty">The first post is on its way.</p>
   </section>
 
   <section class="panel" id="roots" role="tabpanel" aria-labelledby="tab-roots">
     <h2 class="no-js-heading">Roots</h2>
 
-    <p class="work-intro">Long before any job title, these were the places where I learnt what it means to serve.</p>
+    <h2 class="subhead">Education</h2>
 
     <article class="story">
       <div class="meta">B.A. LL.B. · University School of Law and Legal Studies, GGSIPU, New Delhi · 2012 – 2017</div>
@@ -389,38 +388,17 @@
       <p class="coverage">Read more in <a href="https://www.thehindu.com/news/cities/Delhi/ip-university-announces-students-panel/article7728502.ece" target="_blank" rel="noopener">The Hindu</a></p>
     </article>
 
-    <article class="story">
-      <div class="meta">Legal Aid Cell and court internships · Delhi · 2012 – 2017</div>
-      <h3>Taking the law to the people who needed it most</h3>
-      <div class="story-body">
-        <p>For four years, weekends meant the slum clusters of Dwarka, where our legal aid cell helped families understand rights the law already promised them, and gave more than 50 people free legal help. With the Delhi State Legal Services Authority, I trained over 300 para-legal volunteers to carry that work into their own communities, and in the Delhi High Court and district courts I saw how far justice can sit from the people it is meant for.</p>
-      </div>
-      <div class="figures">
-        <div><b>300+</b>para-legal volunteers trained</div>
-        <div><b>50+</b>people given free legal help</div>
-      </div>
-    </article>
+    <h2 class="subhead section-gap">Projects</h2>
 
     <article class="story">
-      <div class="meta">Founding member · Lok Jagrukta Society, New Delhi · 2015 – 2017</div>
-      <h3>Using the Right to Information to win back dignity</h3>
+      <div class="meta">Bharat Darshan · 2020 and 2023</div>
+      <h3>Seeing India as it really is</h3>
       <div class="story-body">
-        <p>A group of us students started a small non-profit with one conviction: that ordinary citizens can make the system answer. Through RTI applications and research done alongside residents, we pushed until more than 600 households in a Dwarka slum had working community toilets. It was my first lesson that dignity is often won through patience and paperwork.</p>
+        <p>Across 14 states and more than 100 districts, I travelled to understand the country beyond headlines and spreadsheets. I sat in public schools, hospitals and district offices, learnt from the Guru-Shishya tradition and the martial art Kalaripayattu, and studied alternative models of education. Most of all, I learnt from strangers who opened their homes to me. Those two journeys shaped every piece of work that followed.</p>
       </div>
       <div class="figures">
-        <div><b>600+</b>households with working toilets</div>
-      </div>
-    </article>
-
-    <article class="story">
-      <div class="meta">Founder, Theatre Vertical · The Dais Initiative, New Delhi · 2016 – 2017</div>
-      <h3>Helping young people find their voice</h3>
-      <div class="story-body">
-        <p>I designed and taught life skills, theatre and public speaking to more than 2,000 students across schools and colleges. With a team of over 30, we trained 1,500 students from Teach For India classrooms in Model United Nations, and watched children who had never spoken in public debate the world's problems at TFI MUN 2017.</p>
-      </div>
-      <div class="figures">
-        <div><b>2,000+</b>students taught</div>
-        <div><b>1,500</b>young delegates trained</div>
+        <div><b>14</b>states</div>
+        <div><b>100+</b>districts</div>
       </div>
     </article>
 
@@ -437,29 +415,47 @@
     </article>
 
     <article class="story">
-      <div class="meta">Bharat Darshan · 2020 and 2023</div>
-      <h3>Seeing India as it really is</h3>
+      <div class="meta">Founder, Theatre Vertical · The Dais Initiative, New Delhi · 2016 – 2017</div>
+      <h3>Helping young people find their voice</h3>
       <div class="story-body">
-        <p>Across 14 states and more than 100 districts, I travelled to understand the country beyond headlines and spreadsheets. I sat in public schools, hospitals and district offices, learnt from the Guru-Shishya tradition and the martial art Kalaripayattu, and studied alternative models of education. Most of all, I learnt from strangers who opened their homes to me. Those two journeys shaped every piece of work that followed.</p>
+        <p>I designed and taught life skills, theatre and public speaking to more than 2,000 students across schools and colleges. With a team of over 30, we trained 1,500 students from Teach For India classrooms in Model United Nations, and watched children who had never spoken in public debate the world's problems at TFI MUN 2017.</p>
       </div>
       <div class="figures">
-        <div><b>14</b>states</div>
-        <div><b>100+</b>districts</div>
+        <div><b>2,000+</b>students taught</div>
+        <div><b>1,500</b>young delegates trained</div>
+      </div>
+    </article>
+
+    <article class="story">
+      <div class="meta">Founding member · Lok Jagrukta Society, New Delhi · 2015 – 2017</div>
+      <h3>Using the Right to Information to win back dignity</h3>
+      <div class="story-body">
+        <p>A group of us students started a small non-profit with one conviction: that ordinary citizens can make the system answer. Through RTI applications and research done alongside residents, we pushed until more than 600 households in a Dwarka slum had working community toilets. It was my first lesson that dignity is often won through patience and paperwork.</p>
+      </div>
+      <div class="figures">
+        <div><b>600+</b>households with working toilets</div>
+      </div>
+    </article>
+
+    <article class="story">
+      <div class="meta">Legal Aid Cell and court internships · Delhi · 2012 – 2017</div>
+      <h3>Taking the law to the people who needed it most</h3>
+      <div class="story-body">
+        <p>For four years, weekends meant the slum clusters of Dwarka, where our legal aid cell helped families understand rights the law already promised them, and gave more than 50 people free legal help. With the Delhi State Legal Services Authority, I trained over 300 para-legal volunteers to carry that work into their own communities, and in the Delhi High Court and district courts I saw how far justice can sit from the people it is meant for.</p>
+      </div>
+      <div class="figures">
+        <div><b>300+</b>para-legal volunteers trained</div>
+        <div><b>50+</b>people given free legal help</div>
       </div>
     </article>
   </section>
 
-  <footer>
-    <div><b>Email</b><a href="mailto:siddhant0805@gmail.com">siddhant0805@gmail.com</a></div>
-    <div><b>Languages</b>Hindi, English, Punjabi</div>
-    <div><b>Interests</b>Geopolitics, history, Indic philosophy, classic rock</div>
-  </footer>
 </main>
 
 <script>
 (function(){
   document.documentElement.classList.add('js');
-  var names = ['about','work','press','roots'];
+  var names = ['about','work','recognition','roots'];
   var tabs = names.map(function(n){ return document.getElementById('tab-' + n); });
   var panels = names.map(function(n){ return document.getElementById(n); });
 
